@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /*I hate this too old coding */
