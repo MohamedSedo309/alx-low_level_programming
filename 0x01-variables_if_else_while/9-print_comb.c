@@ -1,16 +1,23 @@
 #include <stdio.h>
-/*
-- main if for printing 0 - 9
-*/
+
+/**
+ *main - print 0-9 separated with commas, using putchar
+ *Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-int x;
-for (x = '0'; x <= '9'; x++)
+int n = '0';
+while (n <= '9')
 {
-putchar (x);
-putchar (',');
-putchar (' ');
+putchar(n);
+if (n != '9')
+{
+putchar(',');
+putchar(' ');
 }
+n++;
+}
+putchar('\n');
 return (0);
 }
