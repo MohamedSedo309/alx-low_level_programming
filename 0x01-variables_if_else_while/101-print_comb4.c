@@ -17,9 +17,9 @@ int main(void)
 		{
 		  for (hundreds = ( ones + 1); hundreds <= '9'; hundreds++)
 		    {
-		        putchar(hundreds);
 			putchar(tens);
 			putchar(ones);
+			putchar(hundreds);
 
 			if (hundreds != '7' || tens != '8' || ones != '9') /*print commas*/
 			{
