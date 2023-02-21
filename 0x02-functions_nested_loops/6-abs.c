@@ -4,14 +4,14 @@
  * @int: integer
  * Return: last digit of number
  */
-int _abs(int)
+int _abs(int n)
 {
-if (int < 0)
+if (n < 0)
 {
-return (int * -1);
+return (n * -1);
 }
 else
 {
-return (int);
+return (n);
 }
 }
