@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_last_digit - print last digit of integer
- * @int: integer
- * Return: last digit of number
+ * _abs - computer absolute value of integer
+ * @n: integer
+ * Return: absolute value
  */
 int _abs(int n)
 {
