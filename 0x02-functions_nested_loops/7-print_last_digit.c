@@ -10,7 +10,6 @@ if (n < 0)
 {
 n *= -1;
 }
-int l = n % 10;
 _putchar((n % 10) + '0');
-return (l);
+return (n % 10);
 }
