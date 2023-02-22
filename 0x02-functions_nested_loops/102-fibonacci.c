@@ -14,7 +14,7 @@ for (n = 0; n <= 50; n++)
 sum = a + b;
 a = b;
 b = sum;
-printf("%d", sum);
+printf("%ld", sum);
 if (n < 50)
 {
 printf(", ");
