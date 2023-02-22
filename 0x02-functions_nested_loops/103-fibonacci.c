@@ -4,7 +4,7 @@
  * main - print sum of even Fionacci sequence up to 4,000,000
  * Return: 0
  */
-int main()
+int main(void)
 {
 long sum_E = 0;
 long a = 0;
@@ -21,5 +21,6 @@ sum_E = sum_E + sum;
 }
 }
 printf("%ld", sum_E);
+putchar('\n');
 return (0);
 }
