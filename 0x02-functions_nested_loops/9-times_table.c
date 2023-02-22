@@ -13,7 +13,8 @@ m = (x * n);
 if (m == 0)
 {
 _putchar('0');
-if (n < 9 && x == 0){
+if (n < 9 && x == 0)
+{
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
