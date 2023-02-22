@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_3_multiples - print multiples of 3 below 1024
  */
