@@ -9,7 +9,7 @@ int n = 0;
 long a = 0;
 long b = 1;
 long sum = 0;
-for (n = 0; n <= 50; n++)
+for (n = 0; n < 50; n++)
 {
 sum = a + b;
 a = b;
