@@ -9,20 +9,29 @@ for (x = 0; x <= 9; x++)
 {
 for (n = 0; n <= 9; n++)
 {
-   m = (x * n);
-if (m > 9){
-_putchar('0' + (m / 10));
-_putchar('0' + (m % 10));
-}
-else
+m = (x * n);
+if (m == 0)
 {
-_putchar('0' + m);
+_putchar('0');
+if (n < 9 && x == 0){
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
 }
-if (n != 9)
+}
+else if (m <= 9)
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
+_putchar('0' + m);
+}
+else if (m > 9)
+{
+_putchar(',');
+_putchar(' ');
+_putchar('0' + (m / 10));
+_putchar('0' + (m % 10));
 }
 }
 _putchar('\n');
