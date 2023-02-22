@@ -20,5 +20,6 @@ if (n < 49)
 printf(", ");
 }
 }
+putchar('\n');
 return (0);
 }
