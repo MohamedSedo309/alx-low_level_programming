@@ -15,7 +15,7 @@ sum = a + b;
 a = b;
 b = sum;
 printf("%ld", sum);
-if (n < 50)
+if (n < 49)
 {
 printf(", ");
 }
