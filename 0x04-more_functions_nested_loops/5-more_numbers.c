@@ -4,18 +4,17 @@
  */
 void more_numbers(void)
 {
-int i;
-int c = 0;
-while (c <= 10)
-{
-for(i = 0; i < 15; i++)
-{
-if ((i / 10) > 0)
-{
-_putchar((i / 10) + '0');}
-_putchar((i % 10) + '0');
-}
-_putchar('\n');
-c++;
-}
+	char i;
+	int counter;
+
+	for (counter = 1; counter <= 10; counter++)
+	{
+		for (i = 0; i <= 14; i++)
+		{
+			if (i / 10 > 0)
+				_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }
