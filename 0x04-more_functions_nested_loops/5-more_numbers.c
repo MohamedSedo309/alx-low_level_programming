@@ -10,15 +10,12 @@ while (c <= 10)
 {
 for(i = 0; i < 15; i++)
 {
-if(i < 10)
-putchar(i + '0');
-else
+if (i / 10 > 0)
 {
-putchar('1');
-putchar(i - 10 + '0');
+_putchar((i / 10) + '0');}
+_putchar((i % 10) + '0');
 }
-}
-putchar('\n');
+_putchar('\n');
 c++;
 }
 }
