@@ -15,6 +15,6 @@ i++;
 } 
 for (n = 0; n < i; n = (n + 2))
 {
-putchar(str[n]);
+_putchar(str[n]);
 }
 }
