@@ -13,8 +13,9 @@ while (str[i] != '\0')
 {
 i++;
 } 
-for (n = 0; n < i; n = (n + 2))
+for (n = 0; n < i; n = n + 2)
 {
 _putchar(str[n]);
 }
+_putchar('\n');
 }
