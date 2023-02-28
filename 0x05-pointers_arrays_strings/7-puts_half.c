@@ -16,8 +16,6 @@ if (i % 2 != 0)
 {
 i = i - 1;
 k = i / 2;
-printf("%d", k);
-_putchar('\n');
 }
 else
 {
