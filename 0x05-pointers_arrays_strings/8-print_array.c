@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * print_array - prints n elements of an array of integers
+11;rgb:0000/0000/0000* print_array - prints n elements of an array of integers
  * @a: array
  * @n: number of elements
  */
@@ -15,4 +15,5 @@ if (n - t != 1)
 printf(", ") ;
 }
 }
+printf("\n");
 }
