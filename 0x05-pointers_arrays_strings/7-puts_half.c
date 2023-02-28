@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+11;rgb:0000/0000/0000/**
  * puts_half - prints half of a string, followed by a new line
  * @str: string to print
  */
@@ -16,6 +16,7 @@ if (i % 2 != 0)
 {
 i = i - 1;
 k = i / 2;
+k = k + 1;
 }
 else
 {
