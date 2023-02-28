@@ -21,6 +21,7 @@ k = k + 1;
 else
 {
 k = i / 2;
+i = i - 1;
 }
 for (n = k ; n <= i; n++)
 {
