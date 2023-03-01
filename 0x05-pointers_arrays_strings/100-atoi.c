@@ -7,13 +7,11 @@
  */
  
 int _atoi(char *s){
-int res = 0; // Initialize result 
-  
-    // Iterate through all characters of input string and 
-    // update result 
-    for (int i = 0; s[i] != '\0'; ++i) 
+int res = 0; 
+  int i;
+    
+    for ( i = 0; s[i] != '\0'; ++i) 
         res = res * 10 + s[i] - '0'; 
   
-    // return result. 
     return res; 
 }
