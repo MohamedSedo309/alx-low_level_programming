@@ -84,14 +84,12 @@ while ((s[start] >= '0' && s[start] <= '9')
 		digits_to_print += 1;
 		start++;
 	}
-//824
 	i = 1;
 	while (i < digits_to_print) 
 	{
 		t *= 10;
 		i++;
 	}
-//11
 	for (i = digit; i < (digit + digits_to_print); i++) 
 	{
 		num += (s[i] - '0') * t;
