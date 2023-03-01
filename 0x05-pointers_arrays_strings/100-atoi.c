@@ -48,7 +48,6 @@ int len = get_string_lenth(s);
 int h;
 char n[10];
 int m = 0;
-int len_2 = get_string_lenth(n);
 int num = 0;
 int r =0;
 int positive = is_positive(s);
@@ -61,14 +60,14 @@ for (h = 0; h < len; h++){
     }
 }
 
-for (int r = 0; n[r] != '\0'; ++r) {
+for ( r = 0; n[r] != '\0'; ++r) {
     num = num*10 + n[r] - '0'; 
 }
 if (positive == 0){
     return (num * -1);
 
 }
-if (s == "0"){
+if (s == '0'){
     return 0;
 }
 return num;
