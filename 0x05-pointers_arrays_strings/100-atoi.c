@@ -5,7 +5,8 @@
  * @s: string
  * Return: length
  */
-int get_string_lenth(char *s){
+int get_string_lenth(char *s)
+{
 int len = 0;
 while (*s != '\0')
 {
@@ -34,7 +35,8 @@ return (-1); /* return -1 if no digits found */
  * @s: integer
  * Return: integer 1 or 0
  */
-int is_positive(char *s){
+int is_positive(char *s)
+{
 int negatives = 0;
 int i = 0;
 int sign = 1;
@@ -52,7 +54,8 @@ return (sign);
  * @s: string to convert
  * Return: integer
  */
-int _atoi(char *s){
+int _atoi(char *s)
+{
 int start = (start_num(s));
 int sign;
 int digits_to_print = 0;
@@ -65,18 +68,18 @@ if (start < 0)
 return (0);
 }
 sign = is_positive(s);
-while ((s[start] >= '0' && s[start] <= '9')&& (start <= get_string_lenth(s)))
+while ((s[start] >= '0' && s[start] <= '9') && (start <= get_string_lenth(s)))
 {
 digits_to_print += 1;
 start++;
 }
 i = 1;
-while (i < digits_to_print) 
+while (i < digits_to_print)
 {
 t *= 10;
 i++;
 }
-for (i = digit; i < (digit + digits_to_print); i++) 
+for (i = digit; i < (digit + digits_to_print); i++)
 {
 num += (s[i] - '0') * t;
 t /= 10;
