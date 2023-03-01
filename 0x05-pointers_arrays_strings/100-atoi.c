@@ -67,7 +67,7 @@ if (positive == 0){
     return (num * -1);
 
 }
-if (s == '0'){
+if (s[0] == '0'  && s[1] == '\0'){
     return 0;
 }
 return num;
