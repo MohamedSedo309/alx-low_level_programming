@@ -7,6 +7,9 @@
 char *cap_string(char *s)
 {
 int i = 0;
+if (s[i] >= 97 && s[i] <= 122)
+		s[i] = s[i] - 97 + 65;
+	i++;
 while (s[i] != '\0')
 	{
 
