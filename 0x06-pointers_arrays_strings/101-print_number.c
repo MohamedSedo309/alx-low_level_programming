@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
  * print_number - print an integer as char
  * @n: int number
  */
-
 void print_number(int n)
 {
 unsigned int tens;
