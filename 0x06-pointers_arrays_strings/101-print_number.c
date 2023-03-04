@@ -9,8 +9,8 @@ void print_number(int n)
 {
 unsigned int tens;
 unsigned int digit;
-unsigned int positive_n = n;
-double d_num = 1;
+unsigned int number = n;
+double zeros = 1;
 if (n == 0)
 {
 _putchar('0');
@@ -19,19 +19,19 @@ else
 {
 if (n < 0)
 {
-positive_n = n * -1;
+number = n * -1;
 _putchar('-');
 }
-while (d_num <= positive_n)
+while (zeros <= number)
 {
-d_num *= 10;
+zeros *= 10;
 }
-tens = d_num / 10;
+tens = zeros / 10;
 while (tens >= 1)
 {
-digit = positive_n / tens;
+digit = number / tens;
 _putchar(digit + '0');
-positive_n = (positive_n - (tens * digit));
+number = (number - (tens * digit));
 tens /= 10;
 }
 }
