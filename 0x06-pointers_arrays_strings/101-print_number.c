@@ -21,7 +21,8 @@ if (n < 0)
 positive_n = n * -1;
 _putchar('-');
 }
-while (d_num <= positive_n){
+while (d_num <= positive_n)
+{
 d_num *= 10;
 }
 tens = d_num / 10;
