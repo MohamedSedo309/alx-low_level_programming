@@ -14,7 +14,7 @@ if (size > 0)
 {
 while (i <= size)
 {
-*(s + i) = b;
+s[i] = b;
 i++;
 }
 }
