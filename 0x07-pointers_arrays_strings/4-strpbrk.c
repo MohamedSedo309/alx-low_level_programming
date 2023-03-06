@@ -12,7 +12,7 @@ int i = 0;
 int j = 0;
 while (s[i] != '\0')
 {
-while (accept[j] != '\0')
+for (j = 0; accept[j] != '\0'; j++)
 {
 if (s[i] == accept[j])
 {
