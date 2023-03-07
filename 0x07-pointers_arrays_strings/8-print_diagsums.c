@@ -6,19 +6,21 @@
  * @size: array size
  * Return: void
  */
-
 void print_diagsums(int *a, int size)
 {
 int i;
+int j;
 long sum1 = 0;
 long sum2 = 0;
 for (i = 0; i < size; i++)
 {
-sum1 = sum1 + a[i][i];
+j = (i * size) + i;
+sum1 += a[j];
 }
-for (i = (size - 1); i >= 0; i--)
+for (i = 1; i <= size; i++)
 {
-sum2 = sum2 + a[i][i];
+j = (i * size) - i;
+sum2 += a[j];
 }
-printf("%ld, %ld", sum1, sum2);
+printf("%ld, %ld\n", sum1, sum2);
 }
