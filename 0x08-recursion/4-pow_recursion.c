@@ -22,4 +22,5 @@ int res;
 res = x * _pow_recursion(x , y - 1);
 return (res);
 }
+return (0);
 }
