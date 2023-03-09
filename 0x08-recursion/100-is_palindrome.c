@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * compare - compare start and end of a string
- * @head: start of string
- * @tail: end of string
+ * @start: start of string
+ * @end: end of string
  * Return: 1 if matches, 0 if not
  */
 
