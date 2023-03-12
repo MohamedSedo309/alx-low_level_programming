@@ -7,7 +7,7 @@
  * @argv: pointer to array of arguments
  * Return: 0 on success, 1 if two arguments not given
  */
- 
+
 int main(int argc, char *argv[])
 {
 if (argc != 3)
