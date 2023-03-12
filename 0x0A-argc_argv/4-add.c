@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
+#include "main.h"
 /**
  * _isdigit - checks for a digit 0 through 9
  * @c: digit to be checked
