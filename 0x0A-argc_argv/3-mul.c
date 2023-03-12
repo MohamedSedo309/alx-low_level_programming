@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  * main - print multiplication of 2 nums
  * @argc: arguments counter
@@ -14,8 +15,8 @@ int x;
 int y;
 if (argc == 3)
 {
-x = argv[1];
-y = argv[2];
+x = atoi(argv[1]);
+y = atoi(argv[2]);
 printf("%d\n", x * y);
 return (0);
 }
