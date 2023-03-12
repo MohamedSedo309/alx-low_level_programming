@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * main - print number of cmd arguments
  * @argc: arguments counter
