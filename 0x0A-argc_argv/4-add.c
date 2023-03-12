@@ -9,7 +9,7 @@
  * Return: 1 if true, 0 if false
  */
 
-bool _isdigit(int c)
+bool _isdigit(char c)
 {
     if (c >= 48 && c <= 57)
         return (true);
