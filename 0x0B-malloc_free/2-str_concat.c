@@ -32,7 +32,7 @@ len2++, j++;
 }
 len2++;
 t = malloc(sizeof(char) * (len1 + len2));
-if (concat == NULL)
+if (t == NULL)
 {
 return (NULL);
 }
