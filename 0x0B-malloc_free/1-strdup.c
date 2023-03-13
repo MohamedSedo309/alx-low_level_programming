@@ -28,7 +28,7 @@ return (NULL);
 }
 while (j <= i)
 {
-t[j] == str[j];
+t[j] = str[j];
 j++;
 }
 t[j] = '\0';
