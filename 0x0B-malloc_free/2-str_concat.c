@@ -15,11 +15,11 @@ int k = 0;
 char *t;
 if (s1 == NULL)
 {
-s1 = '\0';
+s1 = "";
 }
 if (s2 == NULL)
 {
-*s2 = '\0';
+*s2 = "";
 }
 while (*(s1 + i) != '\0')
 {
@@ -39,11 +39,10 @@ while (k < i)
 s1[k] = t[k];
 k++;
 }
-while (k < j)
+while (k <= j)
 {
 s2[k] = t[k];
 k++;
 }
-t[k] = '\0';
 return (t);
 }
