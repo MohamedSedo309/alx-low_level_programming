@@ -19,7 +19,7 @@ if (w <= 0 || h <= 0)
 {
 return (NULL);
 }
-**arr = (int **)malloc(sizeof(int *) * h);
+arr = (int **)malloc(sizeof(int *) * h);
 if (arr == NULL)
 {
 return (NULL);
