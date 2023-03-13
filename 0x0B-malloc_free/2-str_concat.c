@@ -39,6 +39,7 @@ while (k < i)
 s1[k] = t[k];
 k++;
 }
+j += i;
 while (k <= j)
 {
 s2[k] = t[k];
