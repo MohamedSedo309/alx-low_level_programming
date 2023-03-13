@@ -15,11 +15,11 @@ int k = 0;
 char *t;
 if (s1 == NULL)
 {
-s1 = "";
+s1 = '\0';
 }
 if (s2 == NULL)
 {
-s2 = "";
+*s2 = '\0';
 }
 while (*(s1 + i) != '\0')
 {
