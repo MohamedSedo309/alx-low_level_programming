@@ -6,7 +6,6 @@
  * @str: string to duplicate
  * Return: pointer to duplicated string in allocated memory
  */
- 
 char *_strdup(char *str)
 {
 int i = 0;
@@ -20,7 +19,6 @@ while (*(str + i) != '\0')
 {
 i++;
 }
-i--;
 t = malloc(sizeof(char) * i);
 if (t == NULL)
 {
