@@ -1,5 +1,22 @@
 #include <stdlib.h>
-#include "main.h"
+#include "holberton.h"
+
+/**
+ * _strlen - get string length
+ * @string: string
+ * Return: length
+ */
+
+int _strlen(char *string)
+{
+int i = 0;
+while (string[i] != '\0')
+{
+i++;
+}
+return (i);
+}
+
 /**
  * string_nconcat - concatenate s1 and n bytes of s2
  * @s1: string 1
@@ -7,14 +24,12 @@
  * @n: n bytes to concat from string 2
  * Return:  return ptr to new string
  */
- 
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *t;
-unsigned int len1 = 0;
-unsigned int len2 = 0;
-unsigned int i = 0;
-unsigned int j = 0;
+char *ptr;
+int num, len, i, j;
+num = n;
 if (s1 == NULL)
 {
 s1 = "";
@@ -23,42 +38,28 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-while (*(s1 + i))
-{
-len1++, i++;
-}
-while (*(s2 + j))
-{
-len2++, j++;
-}
-len2++;
-if (n < 0)
+if (num < 0)
 {
 return (NULL);
 }
-if (len2 <= n)
+if (num >= _strlen(s2))
 {
-t = malloc(sizeof(char) * (len1 + len2 + 1));
+num = _strlen(s2);
 }
-if (len2 > n)
-{
-len2 = n;
-t = malloc(sizeof(char) * (len1 + len2));
-}
-if (t == NULL)
+len = _strlen(s1) + num + 1;
+ptr = malloc(sizeof(*ptr) * len);
+if (ptr == NULL)
 {
 return (NULL);
 }
-i = 0, j = 0;
-while (i < len1)
+for (i = 0; s1[i] != '\0'; i++)
 {
-*(t + i) = *(s1 + i);
-i++;
+ptr[i] = s1[i];
 }
-while (j < len2)
+for (j = 0; j < num; j++)
 {
-*(t + i) = *(s2 + j);
-i++, j++;
+ptr[i + j] = s2[j];
 }
-return (t);
+ptr[i + j] = '\0';
+return (ptr);
 }
