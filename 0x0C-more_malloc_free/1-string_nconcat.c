@@ -32,9 +32,13 @@ while (*(s2 + j))
 len2++, j++;
 }
 len2++;
+if (n < 0)
+{
+return (NULL);
+}
 if (len2 <= n)
 {
-t = malloc(sizeof(char) * (len1 + len2));
+t = malloc(sizeof(char) * (len1 + len2 + 1));
 }
 if (len2 > n)
 {
