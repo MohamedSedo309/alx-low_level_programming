@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "main.h"
-
 /**
  * _calloc - allocate memory of a number
  * of elements each of an inputted byte size.
@@ -9,7 +8,6 @@
  *
  * Return: a pointer to the allocated memory
  */
- 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 char *ptr;
