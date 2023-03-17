@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#incluce "main.h"
+#include "main.h"
 /**
 * array_range - create an array of integers
 * @min: min number in the array
@@ -23,7 +23,7 @@ return (NULL);
 }
 for (i = 0; i < n; i++)
 {
-p[t] = min + i;
+p[i] = min + i;
 }
 return (p);
 }
