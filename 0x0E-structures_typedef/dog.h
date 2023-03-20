@@ -1,7 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
 #include <stdio.h>
-
 /**                        
 *struct dog - a new type of data                      
 *representing a dog                          
@@ -9,7 +8,6 @@
 *@age: age of dog                               
 *@owner: owner's name            
 */
-
 struct dog
 {
 char *name;
