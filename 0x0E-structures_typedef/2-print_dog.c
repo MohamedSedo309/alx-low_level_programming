@@ -9,7 +9,7 @@
 void print_dog(struct dog *d)
 {
 
-	if (d == NULL) /* validate if d initiated correctly */
+	if (d == NULL)
 		return;
 
 	(d->name == NULL) ? printf("Name: (nil)\n")
