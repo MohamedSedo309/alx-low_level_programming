@@ -1,7 +1,7 @@
 #include "dog.h"
 /**
-* print_dog - prints a struct dog
-*@d: dog identification
+* print_dog - prints dog details
+*@d: The dog
 *
 */
 void print_dog(struct dog *d)
