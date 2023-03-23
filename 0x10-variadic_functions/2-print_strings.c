@@ -1,13 +1,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "variadic_functions.h"
-
 /**
  * print_strings - prints strings, followed by a new line
  * @separator: spliter
  * @n: number of arguments in list
  */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list valist;
