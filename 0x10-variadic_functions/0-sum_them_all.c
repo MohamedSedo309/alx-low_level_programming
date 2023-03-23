@@ -15,10 +15,9 @@ if (n == 0)
 return (0);
 }
 va_start(valist, n);
-while (i <= n)
+for (i = 0; i < n; i++)
 {
 sum += va_arg(valist, int);
-i++;
 }
 sum += va_arg(valist, int);
 va_end(valist);
