@@ -5,6 +5,7 @@
  * @array: array to itrate
  * @size: size of array
  * @cmp: ptr to function that we need to execute
+ * Return: index if found
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
