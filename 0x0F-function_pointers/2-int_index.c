@@ -4,13 +4,13 @@
  * int_index - using fun ptr to excute cmp fun
  * @array: array to itrate
  * @size: size of array
- * @action: ptr to function that we need to execute
+ * @cmp: ptr to function that we need to execute
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 int i;
 int z;
-if (size <= 0)
+if (array == NULL || cmp == NULL || size <= 0)
 {
 return (-1);
 }
