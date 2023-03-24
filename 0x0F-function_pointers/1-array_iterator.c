@@ -16,7 +16,7 @@ if (array != NULL && action != NULL)
 {
 while (i <= size)
 {
-action(array[i]);
+action(*(array + i));
 i++;
 }
 }
