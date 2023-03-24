@@ -1,12 +1,14 @@
 #include <stddef.h>
 #include "function_pointers.h"
+
 /**
- * array_iterator - print array of int in pointer function
- * @name: parameter to be printed
+ * array_iterator - execute function on an array
+ * via a function ptr
+ * @array: array of int
  * @size: size of array
- * @action:function (int)
- *
+ * @action: pointer to function that we need to execute
  */
+
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 size_t i = 1;
