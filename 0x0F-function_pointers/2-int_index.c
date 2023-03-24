@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "function_pointers.h"
 /**
  * int_index - using fun ptr to excute cmp fun
  * @array: array to itrate
