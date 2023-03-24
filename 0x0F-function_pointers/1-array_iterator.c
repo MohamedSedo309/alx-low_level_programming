@@ -1,5 +1,4 @@
-#include <stdlib.h>
-
+#include <stddef.h>
 /**
  * array_iterator - print array of int in pointer function
  * @name: parameter to be printed
