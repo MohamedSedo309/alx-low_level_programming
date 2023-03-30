@@ -15,9 +15,13 @@ size_t i = 0;
 while (l != NULL)
 {
 if (l->str != NULL)
+{
 printf("[%d] %s\n", l->len, l->str);
+}
 else
+{
 printf("[0] (nil)\n");
+}
 i += 1;
 l = l->next;
 }
