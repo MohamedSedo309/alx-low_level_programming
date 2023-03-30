@@ -5,22 +5,22 @@
 *
 * @h:pointer to single list
 *
-*Return: the number of nodes
+*Return: number of nodes
 */
 
 size_t print_list(const list_t *h)
 {
-const list_t *l = h;
+const list_t *tmp = h;
 size_t i = 0;
 
-while (l != NULL)
+while (tmp != NULL)
 {
-if (l->str != NULL)
-printf("[%d] %s\n", l->len, l->str);
+if (tmp->str != NULL)
+printf("[%d] %s\n", tmp->len, tmp->str);
 else
 printf("[0] (nil)\n");
 i += 1;
-l = l->next;
+tmp = tmp->next;
 }
 
 return (i);
