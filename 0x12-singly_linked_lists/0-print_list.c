@@ -18,7 +18,7 @@ if (l->str != NULL)
 printf("[%d] %s\n", l->len, l->str);
 else
 printf("[0] (nil)\n");
-i++;
+i += 1;
 l = l->next;
 }
 
