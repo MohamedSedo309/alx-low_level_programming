@@ -23,5 +23,5 @@ i += 1;
 tmp = tmp->next;
 }
 
-return (i);
+return i;
 }
