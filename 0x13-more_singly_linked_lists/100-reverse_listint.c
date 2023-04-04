@@ -14,7 +14,7 @@ if (head == NULL || *head == NULL)
 {
 return (NULL);
 }
- tmp = NULL;
+tmp = NULL;
 while (*head != NULL)
 {
 tmp2 = (*head)->next;
