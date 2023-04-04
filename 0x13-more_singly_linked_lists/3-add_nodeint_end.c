@@ -19,7 +19,7 @@ return (NULL);
 }
 while (list->next != NULL)
 {
-list == list->next;
+list = list->next;
 }
 new->n = n;
 new->next = NULL;
