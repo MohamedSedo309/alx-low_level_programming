@@ -18,4 +18,5 @@ tmp = *head;
 m = tmp->n;
 *head = tmp->next;
 free(tmp);
+return (m);
 }
