@@ -10,7 +10,7 @@ size_t size = 0;
 while (h != NULL)
 {
 printf("%d\n", h->n);
-size += 1;
+size++;
 h = h->next;
 }
 return (size);
