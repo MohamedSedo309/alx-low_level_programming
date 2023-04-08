@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_binary - get binary value for 
+ * print_binary - get binary value for
  * unsigned int
  * @n: unsigned int
  * Return: void - print binary
