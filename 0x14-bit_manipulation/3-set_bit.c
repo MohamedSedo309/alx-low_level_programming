@@ -15,6 +15,6 @@ if (index > max_bits)
 return (-1);
 }
 mask <<= index;
-*n = (*n & mask);
+*n = (*n | mask);
 return (1);
 }
