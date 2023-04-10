@@ -35,7 +35,7 @@ free(buffer);
 close(file);
 return (0);
 }
-w = write(file, buffer, letters);
+w = write(STDOUT_FILENO, buffer, letters);
 if (w == -1)
 {
 free(buffer);
