@@ -31,17 +31,17 @@ return (0);
 r = read(file, buffer, letters);
 if (r == -1)
 {
-free (buffer);
-close (file);
+free(buffer);
+close(file);
 return (0);
 }
 w = write(file, buffer, letters);
 if (w == -1)
 {
-free (buffer);
-close (file);
+free(buffer);
+close(file);
 return (0);
 }
-close (file);
+close(file);
 return (r);
 }
