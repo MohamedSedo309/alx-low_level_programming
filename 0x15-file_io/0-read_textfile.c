@@ -43,5 +43,5 @@ close(file);
 return (0);
 }
 close(file);
-return (r + 1);
+return (r);
 }
