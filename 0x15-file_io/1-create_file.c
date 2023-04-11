@@ -33,7 +33,9 @@ str_len++;
 w = write(file, text_content, str_len);
 if (w == -1)
 {
+close(file);
 return (-1);
 }
+close(file);
 return (1);
 }
