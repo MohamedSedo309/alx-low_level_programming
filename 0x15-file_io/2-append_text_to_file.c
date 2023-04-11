@@ -20,7 +20,7 @@ while (text_content[str_len] != '\0')
 str_len++;
 }
 file = open(filename, O_WRONLY | O_APPEND);
-w = write(filename, text_content, str_len);
+w = write(file, text_content, str_len);
 if (file == -1 || w == -1)
 {
 return (-1);
