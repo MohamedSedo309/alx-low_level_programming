@@ -15,7 +15,7 @@ if (filename == NULL)
 {
 return (-1);
 }
-while (text_content[str_len] != '\0')
+for (str_len = 0; text_content[str_len] != '\0';)
 {
 str_len++;
 }
