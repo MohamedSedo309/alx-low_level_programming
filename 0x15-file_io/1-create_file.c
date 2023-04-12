@@ -21,7 +21,7 @@ if (file == -1)
 {
 return (-1);
 }
-if (text_content[0] == '\0')
+if (text_content == NULL)
 {
 close(file);
 return (1);
