@@ -28,7 +28,7 @@ return (1);
 }
 if (text_content != NULL)
 {
-while (text_content[str_len] != '\0')
+for (len = 0; text_content[str_len];)
 {
 str_len++;
 }
