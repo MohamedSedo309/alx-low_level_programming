@@ -15,6 +15,12 @@ return (NULL);
 }
 node->n = n;
 node->next = NULL;
+if (*head == NULL)
+{
+new_node->prev = NULL;
+*head = new_node;
+return (new_node);
+}
 if ((*head)->next != NULL)
 {
 *head = (*head)->next;
