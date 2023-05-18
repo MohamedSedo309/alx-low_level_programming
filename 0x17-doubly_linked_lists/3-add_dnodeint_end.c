@@ -21,7 +21,7 @@ node->prev = NULL;
 *head = node;
 return (node);
 }
-if ((*head)->next != NULL)
+while ((*head)->next != NULL)
 {
 *head = (*head)->next;
 }
