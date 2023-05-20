@@ -17,9 +17,10 @@ node->n = n;
 node->next = NULL;
 if (*head == NULL)
 {
-node->prev = NULL;
 *head = node;
-return (NULL);
+node->next = NULL;
+node->prev = NULL;
+return (node);
 }
 while ((*head)->next != NULL)
 {
