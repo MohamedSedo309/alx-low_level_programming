@@ -19,7 +19,7 @@ if (*head == NULL)
 {
 node->prev = NULL;
 *head = node;
-return (node);
+return (NULL);
 }
 while ((*head)->next != NULL)
 {
