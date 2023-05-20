@@ -1,48 +1,59 @@
 #include "lists.h"
 
 /**
+ * insert_node - insert node to index
+ * @tmp: the node to insert before
+ * @n: node data
+ * Return: pointer to inserted node
+ */
+dlistint_t *insert_node(dlistint_t *tmp, int n)
+{
+dlistint_t *node;
+node = malloc(sizeof(struct dlistint_s));
+if (!node)
+{
+return (NULL);
+}
+node->n = n;
+node->next = tmp;
+node->prev = tmp->prev;
+tmp->prev->next = node;
+tmp->prev = node;
+return (node);
+}
+
+/**
  * insert_dnodeint_at_index - insert node at index
  * @h: list header
  * @idx: index
  * @n: node->n
  * Return:  pointer to the new node
- */
-
+*/
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
-
 {
-unsigned int i = 0;
 dlistint_t *tmp;
-dlistint_t *new_node;
-if (h == NULL)
-{
-return (NULL);
-}
-new_node = malloc(sizeof(dlistint_t));
-if (new_node == NULL)
-{
-return (NULL);
-}
-new_node->n = n;
 if (idx == 0)
 {
-new_node->next = *h;
-*h = new_node;
-return (new_node);
+return (add_dnodeint(h, n));
 }
-tmp = *h;
-while (i < (idx - 1))
+if (!h)
 {
-tmp = tmp->next;
-i++;
-if (tmp == NULL)
-{
-free(new_node);
 return (NULL);
 }
+tmp = *h;
+while ((idx != 0) && (tmp->next))
+{
+idx -= 1;
+tmp = tmp->next;
+if (idx == 0)
+{
+return (insert_node(tmp, n));
 }
-new_node->next = tmp->next;
-tmp->next = new_node;
-return (new_node);
+}
+if (idx == 1)
+{
+return (add_dnodeint_end(h, n));
+}
+return (NULL);
 }
