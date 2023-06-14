@@ -20,7 +20,7 @@ return (NULL);
 index = key_index((const unsigned char *)key, ht->size);
 if (index >= ht->size)
 {
-return (NULL)
+return (NULL);
 }
 node = ht->array[index];
 while (node && strcmp(node->key, key) != 0)
