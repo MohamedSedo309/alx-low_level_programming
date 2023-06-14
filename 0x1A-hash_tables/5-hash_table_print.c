@@ -4,8 +4,8 @@
  * hash_table_print - Prints a hash table.
  * @ht: pointer the hash table
  * Description: Key/value pairs are printed in the order
- *{'Betty': 'Cool', 'python': 'awesome', 'Bob': 
- * 'and Kris love asm', '98': 'Battery Street', 
+ * {'Betty': 'Cool', 'python': 'awesome', 'Bob':
+ * 'and Kris love asm', '98': 'Battery Street',
  * 'N': 'queens', 'c': 'fun', Asterix': 'Obelix'}
  */
 void hash_table_print(const hash_table_t *ht)
